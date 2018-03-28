@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eci.cosw.example.loadpicture.NewPostFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_gravity="center_horizontal|top"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteY="10dp"
+            tools:text=" Enter Message" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addPhoto"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:onClick="SelectPhoto"
+                android:text="Add Photo"
+                tools:text="AddPhoto" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="263dp"
+                android:layout_height="295dp"
+                app:srcCompat="@mipmap/ic_launcher_round" />/>
+
+            <Button
+                android:id="@+id/savePhoto"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Save Photo"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
