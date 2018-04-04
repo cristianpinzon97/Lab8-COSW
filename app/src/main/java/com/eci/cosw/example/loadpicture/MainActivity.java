@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed(){
+        Fragment newPostFragment = new NewPostFragment();
+        showFragment(newPostFragment,true);
+    }
+
     public void showFragment( Fragment fragment, boolean addToBackStack)
     {
         FragmentManager fragmentManager = getSupportFragmentManager();
